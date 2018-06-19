@@ -1,0 +1,30 @@
+[user]
+	name = z20240
+	email = z20240z@gmail.com
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+	br = branch
+	logv = log --name-status
+	dcommit = svn dcommit
+	sre = svn rebase
+	d = difftool
+
+[color]
+        log = auto
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[log]
+	date = local
+	
+	
+[core]
+    editor = vim
+    ignorecase = false
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
