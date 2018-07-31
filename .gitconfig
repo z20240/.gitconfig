@@ -1,16 +1,16 @@
 [user]
-	name = z20240
-	email = z20240z@gmail.com
+	name = les
+	email = les@toppath.tw
 [alias]
 	ci = commit
 	st = status
 	co = checkout
 	br = branch
-	logv = log --name-status
+	logv = log --name-status --graph
 	dcommit = svn dcommit
 	sre = svn rebase
 	d = difftool
-
+    cfg2 = cherry-pick "5844a3c1f325f34762b898cc39f61a308550c772"
 [color]
         log = auto
         diff = auto
@@ -19,12 +19,17 @@
         ui = true
 [log]
 	date = local
-	
-	
+
+
 [core]
     editor = vim
     ignorecase = false
+    compression = -1
 [diff]
 	tool = vimdiff
 [difftool]
 	prompt = false
+[pager]
+	branch = false
+[http]
+	postBuffer = 524288000
