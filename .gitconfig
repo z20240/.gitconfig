@@ -9,7 +9,6 @@
 	logv = log --name-status --graph
 	dcommit = svn dcommit
     re = rebase # 使用 re 代替 merge 。讓歷史更清楚
-    merge = rebase
     pull = pull --rebase
 	d = difftool
     cfg2 = cherry-pick "5844a3c1f325f34762b898cc39f61a308550c772"
@@ -22,6 +21,8 @@
 [log]
 	date = local
 
+[branch]
+    autosetuprebase = always # 对所有的 tracking branches 都设置 rebase
 
 [core]
     editor = vim
