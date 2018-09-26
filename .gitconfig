@@ -9,9 +9,11 @@
 	logv = log --name-status --graph
 	dcommit = svn dcommit
     re = rebase # 使用 re 代替 merge 。讓歷史更清楚
-    pull = pull --rebase
 	d = difftool
     cfg2 = cherry-pick "5844a3c1f325f34762b898cc39f61a308550c772"
+    sre = pull --rebase
+    lgr = log --oneline --decorate=short --date=relative  --pretty=format:\"%C(auto,yellow)%h %C(auto,magenta)% G? %x08 %C(auto,green)%an %C(auto,blue)%x09%ad%x09 %C(auto,reset)%s %C(auto,red)% gD% D\"
+
 [color]
         log = auto
         diff = auto
