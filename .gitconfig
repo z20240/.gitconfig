@@ -14,6 +14,7 @@
     sre = pull --rebase
     logr = log --oneline --decorate=short --date=relative  --pretty=format:\"%C(auto,yellow)%h %C(auto,magenta)% G? %x08 %C(auto,green)%an %C(auto,blue)%x09%ad%x09 %C(auto,reset)%s %C(auto,red)% gD% D\"
     dog = log --decorate --all --graph
+    br-sync = !git fetch --all && git fetch origin --prune
 
 [color]
         log = auto
