@@ -1,41 +1,41 @@
 [user]
-        name = les
-        email = z20240z@gmail.com
+    name = les
+    email = z20240z@gmail.com
 [alias]
-        ci = commit
-        st = status
-        co = checkout
-        br = branch
-        sth = stash
-        logv = log --name-status --graph
-        rb = rebase # 使用 re 代替 merge 。讓歷史更清楚
-        d = difftool
-        plr = pull --rebase
-        logr = log --oneline --decorate=short --date=relative  --pretty=format:\"%C(auto,yellow)%h %C(auto,magenta)% G? %x08 %C(auto,green)%an %C(auto,blue)%x09%ad%x09 %C(auto,reset)%s %C(auto,red)% gD% D\"
-        dog = log --decorate --all --graph
-        br-sync = !git fetch --all && git fetch origin --prune
+    ci = commit
+    st = status
+    co = checkout
+    br = branch
+    sth = stash
+    logv = log --name-status --graph
+    rb = rebase # 使用 re 代替 merge 。讓歷史更清楚
+    d = difftool
+    plr = pull --rebase
+    logr = log --oneline --decorate=short --date=relative  --pretty=format:\"%C(auto,yellow)%h %C(auto,magenta)% G? %x08 %C(auto,green)%an %C(auto,blue)%x09%ad%x09 %C(auto,reset)%s %C(auto,red)% gD% D\"
+    dog = log --decorate --all --graph
+    br-sync = !git fetch --all && git fetch origin --prune
 
 [color]
-        log = auto
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+    log = auto
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
 [log]
-        date = local
+    date = local
 
 [branch]
-        autosetuprebase = always # 对所有的 tracking branches 都设置 rebase
+    autosetuprebase = always # 对所有的 tracking branches 都设置 rebase
 
 [core]
-        editor = vim
-        ignorecase = false
-        #compression = -1
+    editor = vim
+    ignorecase = false
+    #compression = -1
 [diff]
-        tool = vimdiff
+    tool = vimdiff
 [difftool]
-        prompt = false
+    prompt = false
 [pager]
-        branch = false
+    branch = false
 [http]
-        postBuffer = 524288000
+    postBuffer = 524288000
