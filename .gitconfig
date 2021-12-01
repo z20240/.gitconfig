@@ -15,6 +15,9 @@
     dog = log --decorate --all --graph
     br-sync = !git fetch --all && git fetch origin --prune
     rbs = !rebase-branches # using rebase-branches to rebase all branches (https://www.npmjs.com/package/rebase-branches)
+    cobr = !git checkout $(git branch | fzf --cycle --border --ansi)
+    dlbr = !git-del-br
+    addf = !git add $(git ls-files -m -o --exclude-standard | fzf -m)
 
 [color]
     log = auto
