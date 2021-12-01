@@ -16,9 +16,9 @@
     br-sync = !git fetch --all && git fetch origin --prune
     
     rbs = !rebase-branches # using rebase-branches to rebase all branches (https://www.npmjs.com/package/rebase-branches)
-    cobr = !git-co-br
-    delbr = !git-del-br
-    addf = !git-add
+    cobr = !git checkout $(git branch | fzf --cycle --border --ansi)
+    dlbr = !git-del-br
+    addf = !git status --short | fzf --multi --color=dark --cycle --border --ansi --preview-window=up:70% --preview=\"git diff --color {+2}\" | awk '{print \$2}' | xargs git add
 
 [color]
     log = auto
