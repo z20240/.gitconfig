@@ -20,6 +20,10 @@
     dlbr = !git-del-br
     addf = !git add $(git ls-files -m -o --exclude-standard | fzf -m)
 
+    # hotfix process for canner
+    canner-hotfix = !$(git fetch && git checkout origin/master && git merge origin/develop && git push origin HEAD:develop && git checkout origin/master && git tag $1 && git push origin $1)
+
+
 [color]
     log = auto
     diff = auto
