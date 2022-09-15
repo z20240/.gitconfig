@@ -9,7 +9,7 @@
     br = branch
     sth = stash
     logv = log --name-status --graph
-    rb = rebase --preserve-merges # 使用 re 代替 merge 。讓歷史更清楚
+    rb = rebase --rebase-merges # 使用 re 代替 merge 。讓歷史更清楚
     d = difftool
     plr = pull --rebase
     logr = log --oneline --decorate=short --date=relative  --pretty=format:\"%C(auto,yellow)%h %C(auto,magenta)% G? %x08 %C(auto,green)%an %C(auto,blue)%x09%ad%x09 %C(auto,reset)%s %C(auto,red)% gD% D\"
