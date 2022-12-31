@@ -7,6 +7,8 @@
     co = checkout
     cp = cherry-pick
     br = branch
+    ps = push
+    pl = pull
     sth = stash
     logv = log --name-status --graph
     rb = rebase --rebase-merges # 使用 re 代替 merge 。讓歷史更清楚
